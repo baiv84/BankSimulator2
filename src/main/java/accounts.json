@@ -1,0 +1,61 @@
+[
+  {
+    "ownerName": "Peter Mahovlich",
+    "accountNumber": "23467892",
+    "money": 876342
+  },
+
+  {
+    "ownerName": "Serge Savar",
+    "accountNumber": "2345675671",
+    "money": 456234
+  },
+
+  {
+    "ownerName": "Frank Mahovlich",
+    "accountNumber": "45762111",
+    "money": 198700
+  },
+
+  {
+    "ownerName": "Yvon Cornoier",
+    "accountNumber": "3145890",
+    "money": 958000
+  },
+
+  {
+    "ownerName": "Phil Espozito",
+    "accountNumber": "22456789",
+    "money": 1200000
+  },
+
+  {
+    "ownerName": "Paul Henderson",
+    "accountNumber": "21214589",
+    "money": 765222
+  },
+
+  {
+    "ownerName": "Jean-Paul Parise",
+    "accountNumber": "22890421",
+    "money": 657890
+  },
+
+  {
+    "ownerName": "Bobby Clarke",
+    "accountNumber": "33213499",
+    "money": 498675
+  },
+
+  {
+    "ownerName": "Stan Mickita",
+    "accountNumber": "22678942",
+    "money": 324567
+  },
+
+  {
+    "ownerName": "Ken Dryden",
+    "accountNumber": "67834126",
+    "money": 500299
+  }
+]
