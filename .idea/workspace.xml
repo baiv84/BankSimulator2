@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9c3221a0-0e03-453c-bef9-01757d8ee45a" name="Changes" comment="" />
+    <list default="true" id="9c3221a0-0e03-453c-bef9-01757d8ee45a" name="Changes" comment="Fix .gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tools/ColorOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tools/ColorOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/transactions/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/transactions/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/transactions/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/transactions/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/transactions/TaskRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/transactions/TaskRunner.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +59,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/radmin/code/java/BankSimulator2",
+    "last_opened_file_path": "/Users/admin/code/java/BankSimulator2",
     "onboarding.tips.debug.path": "/Users/admin/code/java/BankSimulator/src/main/java/Main.java"
   }
 }]]></component>
@@ -112,13 +119,20 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in BankSimulator" />
         <item itemvalue="JUnit.java in BankSimulator" />
         <item itemvalue="JUnit.LoadClientDataTest.totalMoney_calculate_success" />
-        <item itemvalue="JUnit.All in BankSimulator" />
         <item itemvalue="JUnit.LoadClientDataTest.toJson_validObject_success" />
         <item itemvalue="JUnit.LoadClientDataTest.fromJson_validObject_success" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-249ae16d76d6-69315bf7" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -129,6 +143,15 @@
       <option name="presentableId" value="Default" />
       <updated>1702721757816</updated>
     </task>
+    <task id="LOCAL-00001" summary="Fix .gitignore">
+      <option name="closed" value="true" />
+      <created>1703173993953</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1703173993953</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,5 +164,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix .gitignore" />
   </component>
 </project>

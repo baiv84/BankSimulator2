@@ -2,6 +2,7 @@ package transactions;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Data;
+
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.*;
@@ -53,16 +54,24 @@ public class Bank {
     }
 
 
-    public Account getRandomAccountExceptMe(String exceptAccountNumber) {
+    public Account getRandomAccountExceptMe(Account account) {
         Set<String> keysAccount = accounts.keySet();
-        //keysAccount.remove(exceptAccountNumber);
-
-        int size = keysAccount.size();
-        int randomIndex = new Random().nextInt(size);
-
         Object[] keysAsArray = keysAccount.toArray();
-        String randomKey = (String)keysAsArray[randomIndex];
-        return accounts.get(randomKey);
+
+        int randomIndex = 0;
+        int size = keysAccount.size();
+        Account randomAccount;
+
+        while (true) {
+            randomIndex = new Random().nextInt(size);
+            String randomKey = (String)keysAsArray[randomIndex];
+            randomAccount = accounts.get(randomKey);
+
+           if (!randomAccount.equals(account)) {
+               break;
+           }
+        }
+        return randomAccount;
     }
 
 

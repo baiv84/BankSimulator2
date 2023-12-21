@@ -1,9 +1,6 @@
-import tools.ColorOutput;
-import tools.LongRandomNumberGenerator;
 import transactions.Account;
 import transactions.Bank;
 import transactions.TaskRunner;
-
 import java.io.IOException;
 import java.util.Map;
 
@@ -13,13 +10,10 @@ public class Main {
         bank.initializeFromJsonFile("src/main/java/accounts.json");
 
         Map<String, Account> items = bank.getAccounts();
-        for (Map.Entry<String, Account> item: items.entrySet())
-        {
-            String accountNumber = item.getKey();
+        for (Map.Entry<String, Account> item: items.entrySet()) {
             Account account = item.getValue();
             Thread th = new Thread(new TaskRunner(account));
             th.start();
         }
-
     }
 }

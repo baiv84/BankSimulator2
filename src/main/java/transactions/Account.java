@@ -2,6 +2,8 @@ package transactions;
 
 import lombok.Data;
 
+import java.util.Objects;
+
 @Data
 public class Account {
     private String ownerName;
@@ -9,6 +11,18 @@ public class Account {
     private long money;
     private Bank myBank;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Account account = (Account) o;
+        return money == account.money && Objects.equals(ownerName, account.ownerName) && Objects.equals(accountNumber, account.accountNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(ownerName, accountNumber, money);
+    }
 
     public Account() {
     }
