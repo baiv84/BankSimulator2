@@ -7,12 +7,10 @@ public class Account {
     private String ownerName;
     private String accountNumber;
     private long money;
+    private Bank myBank;
 
 
     public Account() {
-//        this.ownerName = "";
-//        this.accountNumber = "";
-//        this.money = 0;
     }
 
     public Account(String ownerName, String accountNumber, long money) {

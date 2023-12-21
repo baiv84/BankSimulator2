@@ -1,12 +1,12 @@
 package transactions;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-
+import lombok.Data;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.*;
 
-
+@Data
 public class Bank {
     private final Map<String, Account> accounts = new HashMap<>();
     private final Random random = new Random();
@@ -36,6 +36,7 @@ public class Bank {
         }
 
         myAccounts.forEach(account -> {
+            account.setMyBank(this);
             String accNum = account.getAccountNumber();
             addNewAccount(accNum, account);
         });
@@ -49,6 +50,19 @@ public class Bank {
             foundAccounts.add(accounts.get(number));
         }
         return foundAccounts;
+    }
+
+
+    public Account getRandomAccountExceptMe(String exceptAccountNumber) {
+        Set<String> keysAccount = accounts.keySet();
+        //keysAccount.remove(exceptAccountNumber);
+
+        int size = keysAccount.size();
+        int randomIndex = new Random().nextInt(size);
+
+        Object[] keysAsArray = keysAccount.toArray();
+        String randomKey = (String)keysAsArray[randomIndex];
+        return accounts.get(randomKey);
     }
 
 
